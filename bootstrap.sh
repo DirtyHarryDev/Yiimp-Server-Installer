@@ -36,15 +36,6 @@ cd $HOME/yiimpserver/install
 
 # Update it.
 sudo chown -R $USER $HOME/yiimpserver/install/.git/
-if [ "${TAG}" != `git describe --tags` ]; then
-	echo Updating Yiimp Server Installer to ${TAG} . . .
-	git fetch --depth 1 --force --prune origin tag ${TAG}
-	if ! git checkout -q ${TAG}; then
-		echo "Update failed. Did you modify something in `pwd`?"
-		exit
-	fi
-	echo
-fi
 
 # Start setup script.
 bash $HOME/yiimpserver/install/start.sh
