@@ -24,9 +24,7 @@ if [ ! -d $HOME/yiimpserver ]; then
 	fi
 
 	echo Downloading Yiimp Server Installer ${TAG}. . .
-	git clone \
-		-b ${TAG} --depth 1 \
-		https://github.com/DirtyHarryDev/yiimp_server_setup \
+	git clone https://github.com/DirtyHarryDev/yiimp_server_setup \
 		"$HOME"/yiimpserver/install \
 		< /dev/null 2> /dev/null
 
