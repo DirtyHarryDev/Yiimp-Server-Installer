@@ -9,27 +9,17 @@
 #                                                                                                         #
 ###########################################################################################################
 
-if [ -z "${TAG}" ]; then
-	TAG=v1.0
-fi
-
 
 # Clone the Yiimp Server repository if it doesn't exist.
-if [ ! -d $HOME/yiimpserver ]; then
-	if [ ! -f /usr/bin/git ]; then
-		echo Installing git . . .
-		apt-get -q -q update
-		DEBIAN_FRONTEND=noninteractive apt-get -q -q install -y git < /dev/null
-		echo
-	fi
 
-	echo Downloading Yiimp Server Installer ${TAG}. . .
-	git clone https://github.com/DirtyHarryDev/yiimp_server_setup \
-		"$HOME"/yiimpserver/install \
-		< /dev/null 2> /dev/null
+echo Installing git . . .
+apt-get -q -q update
+apt-get -q -q install -y git < /dev/null
+echo
 
-	echo
-fi
+echo Downloading Yiimp Server Installer. . .
+git clone https://github.com/DirtyHarryDev/yiimp_server_setup "$HOME"/yiimpserver/install < /dev/null 2> /dev/null
+echo
 
 # Start setup script.
 bash $HOME/yiimpserver/install/start.sh
