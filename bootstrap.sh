@@ -31,11 +31,5 @@ if [ ! -d $HOME/yiimpserver ]; then
 	echo
 fi
 
-# Set permission and change directory to it.
-cd $HOME/yiimpserver/install
-
-# Update it.
-sudo chown -R $USER $HOME/yiimpserver/install/.git/
-
 # Start setup script.
 bash $HOME/yiimpserver/install/start.sh
