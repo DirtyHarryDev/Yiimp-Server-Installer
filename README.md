@@ -1,10 +1,10 @@
-## Dirty Harry`s Yiimp Crypto-Server Setup Installer!
+## Dirty Harry`s YiiMP Server Installer !
 
 ## This is opened as a public repo - all features are not final!
 
-All in one installer for your yiimp crypto-server.
+All in one installer for your yiimp server.
 
-**Dirty Harry`s Crypto-Server Setup Installer!** Automates most of the tedious tasks of the following releases:
+**Dirty Harry YiiMP Server Installer! ** Automates most of the tedious tasks of the following releases:
 
 * YiiMP
 
