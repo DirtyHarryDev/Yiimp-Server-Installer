@@ -41,7 +41,7 @@ After creating the new user account or updating your existing account, you MUST 
 
 After rebooting the server to your user to start the installer type:
 ```
-multipool
+yiimpserver
 ```
 
 ## YiiMP Single Server Install
@@ -209,6 +209,8 @@ The following GitHubs have been a source of inspiration and code:
 
 * [mailinabox](https://github.com/mail-in-a-box/mailinabox)
 * [realeas-it](https://github.com/webpro/release-it)
+* [cryptopool.builders](https://github.com/cryptopool-builders)
+* [Kudaraidee](https://github.com/Kudaraidee)
 
 The following forks have been used in the making of the script:
 
